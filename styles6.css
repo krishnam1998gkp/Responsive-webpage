@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: lightpink;
+}
+/*Styling the header*/
+.header{
+    text-align: center;
+    background: #ddd;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.header h1{
+    color: rgb(100,0,100);
+}
+.header p{
+    color: rgb(200,0,200);
+    font-size: 16px;
+}
+/*Styling the navigation bar*/
+.topnav{
+    overflow: hidden;
+    background-color: rgb(200,0,200); 
+}
+.topnav a{
+    float: left;
+    display: block;
+    padding: 12px 14px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+.topnav a:hover{
+    background: purple;
+}
+/*Main BOdy of the website*/
+.leftcolumn{
+    float: left;
+    width: 75%;
+}
+.rightcolumn{
+    float: right;
+    width: 25%;
+    padding-left: 28px;
+    
+}
+.card{
+    background-color: #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.card h2{
+    color: rgb(100,0,100);
+    text-align: center;
+}
+p{
+    color: rgb(200,0,200);
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+.fakeimage{
+    width: 100%;
+    background-color: rgb(255,201,255);
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/*footer*/
+.footer{
+    text-align: center;
+    background: #ddd;
+    padding: 20px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.footer h1{
+    color: rgb(100,0,100);
+}
+@media screen and (max-width: 800px){
+    .rightcolumn,.leftcolumn{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    .topnav a{
+        float: none;
+        width: 100%;
+    }
+}
